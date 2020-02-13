@@ -1,0 +1,17 @@
+--Para poder ejecutar el proyecto necesitaremos de las sigientes herramientas--
+
+PHP >=5.5 liga de descarga https://www.php.net/releases/
+Apache Server 2.2 liga de descarga https://httpd.apache.org/download.cgi
+mysql->5.7 liga de descarga https://dev.mysql.com/downloads/mysql/
+
+Una ves hecho la descarga crear una carpeta en la unidad "c:" con el nombre que gustes (ejemplo:proyectosphp)
+en donde pondras todos los archivos decargados y asi poder llamar todo desde un solo lugar, abres los archivos de apache
+y buscar el archivo httpd.conf donde al final de los "LoadModule" colocaras esta linea
+LoadModule php5_module "c:/proyectophp/php/php5.6.19/php5apache2_4.dll" (Deacuardo a la version descargada),
+ para que apache y php puedan trabajar.
+
+Una ves descargado MYSQL validar que funciona correctamente decargando un administrador de base de datos y hacer la conexion nueva con 
+usuario:root y sin contraseña (es lo que manda por default mysql).
+
+Una ves validado la conexion , cremoas una base de datos con el nombre de cliente, y una ves hecho eso ejecutamos el archivo que esta 
+el la ruta examenexitus/databases/cliente.sql, desde al admistrador y asi poder tener la tabla y poder ejcutar correctamente el proyecto
